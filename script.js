@@ -91,7 +91,7 @@ class App {
     }).addTo(this.#map);
 
     L.marker(coordinates).addTo(this.#map)
-        .bindPopup('Your marker showing position.<br> Easily customizable.')
+        .bindPopup('Your marker showing position.')
         .openPopup();
 
     this.#map.on('click', this._showForm.bind(this))
